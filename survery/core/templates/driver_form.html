@@ -1,0 +1,61 @@
+<!-- driver_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Driver Information</h2>
+        <form method="get">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_first_name">First Name</label>
+                {{ form.first_name }}
+            </div>
+            <div class="form-group">
+                <label for="id_last_name">Last Name</label>
+                {{ form.last_name }}
+            </div>
+            <div class="form-group">
+                <label for="id_gender">Gender</label>
+                {{ form.gender }}
+            </div>
+            <div class="form-group">
+                <label for="id_email">Email</label>
+                {{ form.email }}
+            </div>
+            <div class="form-group">
+                <label for="id_age">Age</label>
+                {{ form.age }}
+            </div>
+            <div class="form-group form-check">
+                {{ form.good_driver }}
+                <label class="form-check-label" for="id_good_driver">{{ form.good_driver.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.speeding_ticket }}
+                <label class="form-check-label" for="id_speeding_ticket">{{ form.speeding_ticket.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.car_crash }}
+                <label class="form-check-label" for="id_car_crash">{{ form.car_crash.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.employed }}
+                <label class="form-check-label" for="id_employed">{{ form.employed.label }}</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (Optional, only needed if you require JavaScript features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
