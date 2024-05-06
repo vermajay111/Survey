@@ -7,7 +7,7 @@ def driver_form(request):
         form = DriverForm(request.GET)
         if form.is_valid():
             form.save()
-            return render(request, 'driver_form.html', {'form': form})
+            return render(request, 'done.html')
     else:
         form = DriverForm()
     return render(request, 'driver_form.html', {'form': form})

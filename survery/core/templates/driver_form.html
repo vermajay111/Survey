@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driver Form</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -49,6 +48,44 @@
                 {{ form.employed }}
                 <label class="form-check-label" for="id_employed">{{ form.employed.label }}</label>
             </div>
+            <!-- Additional questions -->
+            <div class="form-group form-check">
+                {{ form.interested_in_fitness }}
+                <label class="form-check-label" for="id_interested_in_fitness">{{ form.interested_in_fitness.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.enjoy_cooking }}
+                <label class="form-check-label" for="id_enjoy_cooking">{{ form.enjoy_cooking.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.prefer_reading_fiction }}
+                <label class="form-check-label" for="id_prefer_reading_fiction">{{ form.prefer_reading_fiction.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.pet_owner }}
+                <label class="form-check-label" for="id_pet_owner">{{ form.pet_owner.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.enjoy_outdoor_activities }}
+                <label class="form-check-label" for="id_enjoy_outdoor_activities">{{ form.enjoy_outdoor_activities.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.morning_person }}
+                <label class="form-check-label" for="id_morning_person">{{ form.morning_person.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.tech_savvy }}
+                <label class="form-check-label" for="id_tech_savvy">{{ form.tech_savvy.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.enjoy_scifi_movies }}
+                <label class="form-check-label" for="id_enjoy_scifi_movies">{{ form.enjoy_scifi_movies.label }}</label>
+            </div>
+            <div class="form-group form-check">
+                {{ form.prefer_texting_over_calling }}
+                <label class="form-check-label" for="id_prefer_texting_over_calling">{{ form.prefer_texting_over_calling.label }}</label>
+            </div>
+            <!-- You can continue adding more questions following the same structure -->
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
