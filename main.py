@@ -1,10 +1,7 @@
-import pygetwindow as gw
+mult = -42
+sumer = -11
 
-def set_resolution(width, height):
-    # Get the primary display
-    screen = gw.getWindowsWithTitle('Program Manager')[0]
-    screen.moveTo(0, 0)
-    screen.resizeTo(width, height)
-
-# Example usage
-set_resolution(1920, 1080)
+for i in range(0, abs(mult)):
+    for j in range(0, abs(mult)):
+        if i + j == abs(sumer) and i * j == abs(mult):
+            print([i, j])
